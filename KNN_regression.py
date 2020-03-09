@@ -25,7 +25,7 @@ def distance(x):
         else:
             dis_x_data=x_data[Q-3:Q+4]
             data_y_data=y_data[:,Q-3:Q+4]
-    w=1/(np.square(dis_x_data-x)+0.001) #引入偏置防止数据点与测试点重合引起的报错
+    w=1/(np.square(dis_x_data-x)+0.02) #引入偏置防止数据点与测试点重合引起的报错
     mean_=np.sum(w*data_y_data,axis=None)/np.sum(w,axis=None)
     return mean_
                 

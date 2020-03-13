@@ -48,8 +48,8 @@ for i in x_:
 for j in x_data:
     x_data_test.insert(num_2,distance(j))
     num_2=num_2+1
-train_err=np.sum(np.abs(y_data-x_data_test),axis=None)/np.sum(y_data,axis=None)
-test_err=np.sum(np.abs(20*np.sin(x_)-y_P),axis=None)/np.sum(20*np.sin(x_),axis=None)
+train_err=np.sum(np.abs(y_data-x_data_test),axis=None)/np.sum(np.abs(y_data),axis=None)
+test_err=np.sum(np.abs(20*np.sin(x_)-y_P),axis=None)/np.sum(np.abs(20*np.sin(x_)),axis=None)
 plt.plot(x_,y_P,'r-') 
 plt.title('K=6时回归曲线\n训练误差为： '+str(train_err)+'\n测试误差为： '+str(test_err))
 plt.show()

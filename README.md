@@ -1,7 +1,7 @@
 ＃<center>欢迎来到我的GitHub个人主页</center>
 <br/>这里是我的第一个Python算法实战项目：KNN算法
 <br/>
-'''python
+'''
 #-*- coding: utf-8 -*-
 #K-NN算法的回归实战
 import numpy as np
